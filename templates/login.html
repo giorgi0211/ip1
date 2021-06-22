@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %} Login - {{super()}} {% endblock %}
+
+{% block content %}
+    <form method="post" style="width: 40%; margin-left: 30px">
+            {{super()}}
+        <h2>Login Page</h2>
+        <input type="text" class="form-control mt-4" name="username">
+        <input type="password" class="form-control mt-3" name="password">
+        <button type="submit" class="btn btn-primary mt-4">Login</button>
+    </form>
+{%endblock%}
